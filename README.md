@@ -4,7 +4,8 @@ Bright's beginner Python practice website, with eight editable lessons covering 
 
 ## Open the website
 
-The GitHub Pages version is public. Use the website link in this repository's About section or Settings > Pages.
+Visit the public practice website:
+https://brightwebs.github.io/python-practice-site/
 
 ## Practice features
 
