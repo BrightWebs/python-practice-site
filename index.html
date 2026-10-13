@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Your beginner Python practice workspace. Edit code, try inputs, and learn what every piece of syntax means.">
+  <meta name="color-scheme" content="light"><meta name="robots" content="noindex,nofollow">
+  <title>Python Practice | Bright's workspace</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to practice</a>
+  <aside class="sidebar" aria-label="Learning path">
+    <a class="brand" href="#"><span class="brand-mark" aria-hidden="true">p<span>_</span></span><span>python<span class="brand-second">practice</span></span></a>
+    <div class="workspace-label"><span class="avatar">B</span><div>Bright's workspace<small>A little better, every day.</small></div></div>
+    <div class="path-label">YOUR FIRST STEPS <span>01—08</span></div>
+    <nav id="lesson-nav" aria-label="Choose a lesson"></nav>
+    <div class="sidebar-bottom"><div class="progress-heading"><span>Your progress</span><strong id="progress-text">0 / 8</strong></div><progress id="progress" max="8" value="0" aria-label="Completed lessons"></progress><p id="progress-caption">Every small step counts.</p><button id="open-glossary" class="glossary-link"><span aria-hidden="true">Aa</span> Your syntax dictionary <span aria-hidden="true">↗</span></button><p class="local-note">Drafts and progress stay in this browser.</p></div>
+  </aside>
+  <div class="page">
+    <header class="topbar"><span><span class="dot"></span> THE PRACTICE ROOM</span><span class="private-badge"><svg width="15" height="14" viewBox="0 0 20 18" fill="none" aria-hidden="true"><path d="M6 4L2 9l4 5M14 4l4 5-4 5M12 2l-4 14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Personal practice space</span></header>
+    <main id="main">
+      <section class="welcome"><div class="eyebrow">MADE FOR YOUR NEXT SMALL WIN</div><h1>Learn it. Try it. <span>Make it yours.</span></h1><p>No unexplained symbols. No giant leaps. Just useful Python, one idea at a time.</p></section>
+      <section class="lesson-heading" aria-label="Current lesson"><div><span id="lesson-kicker" class="lesson-kicker"></span><h2 id="lesson-title"></h2></div><div class="lesson-controls"><span id="lesson-time" class="time"></span><button id="previous" class="square-btn" aria-label="Previous lesson">←</button><button id="next" class="square-btn" aria-label="Next lesson">→</button></div></section>
+      <p id="lesson-intro" class="lesson-intro"></p>
+      <div class="practice-grid">
+        <div class="code-column">
+          <section class="editor-card" aria-label="Editable Python example"><div class="editor-head"><span><span class="file-dot"></span> practice.py <span class="editable">EDITABLE</span></span><button id="reset-code" title="Restore this lesson's starting code">↺ Reset example</button></div><div class="code-editor"><div id="line-numbers" class="line-numbers" aria-hidden="true"></div><div class="editor-text"><pre id="highlight" aria-hidden="true"></pre><textarea id="code" aria-label="Python code editor" spellcheck="false" autocapitalize="off" autocomplete="off" autocorrect="off" wrap="off" maxlength="20000"></textarea></div></div><div class="editor-footer"><span id="save-status">Saved in this browser</span><div><span class="shortcut" aria-hidden="true">Ctrl / ⌘ + Enter</span><button id="run" class="run-btn"><span aria-hidden="true">▶</span> Run code</button></div></div></section>
+          <section class="output-card" aria-label="Program output"><div class="panel-title"><h3><span class="terminal-icon" aria-hidden="true">›_</span> Output</h3><span id="run-status" class="run-status">Ready when you are</span></div><div id="output" class="output" aria-live="polite"><div class="output-empty"><span aria-hidden="true">▶</span><p>Your code has something to say.<small>Press Run code to see it here.</small></p></div></div><form id="input-form" hidden><label id="input-prompt" for="input-answer"></label><div class="answer-row"><input id="input-answer" type="text" autocomplete="off" placeholder="Type your answer…"><button type="submit" class="answer-button">Enter ↵</button><button id="stop" type="button" class="stop-button">Stop</button></div><small>input() waits here. Your answer is returned as text.</small></form></section>
+          <details class="variables-panel" open><summary>Inside your variables <span id="variable-count">0 values</span></summary><p class="variable-help">See what each name holds. Quotes make spaces in text easier to spot.</p><div id="variables" class="variables-content"><p class="muted">Run your code to inspect saved values.</p></div></details>
+          <details class="sample-panel"><summary>What the starting example does <span aria-hidden="true">⌄</span></summary><div id="sample"></div></details>
+        </div>
+        <aside class="explanation-column" aria-label="Syntax explanations"><section class="explanation-card"><div class="guide-title"><span class="idea-icon" aria-hidden="true">✦</span><h3>Understand every piece</h3></div><p class="guide-intro">Click a line in the editor. Let's break it down.</p><div id="line-explanation" class="line-explanation"></div><div class="concept-heading">THE SYNTAX, IN PLAIN ENGLISH</div><div id="syntax-guide"></div></section></aside>
+      </div>
+      <section class="challenge-card" aria-labelledby="challenge-title"><div class="challenge-icon" aria-hidden="true">↗</div><div class="challenge-body"><span class="eyebrow">A SMALL CHALLENGE</span><h3 id="challenge-title">Your turn to make it work.</h3><p id="task"></p><div class="challenge-actions"><button id="check" class="primary-btn">Check my practice <span aria-hidden="true">→</span></button><button id="hint" class="text-btn" aria-expanded="false">Give me a hint</button><button id="solution" class="text-btn" aria-expanded="false">Show a solution</button></div><p id="hint-text" class="hint-text" hidden></p><div id="solution-panel" hidden><p>A worked example to read and compare. Try your own version before checking.</p><pre id="solution-code"></pre></div><div id="feedback" role="status" hidden></div><button id="continue" class="continue-btn" hidden>Next small step →</button></div></section>
+      <footer class="footer"><span>Built around the basics you're learning.</span><p>Practice runner: variables, text, numbers, print(), input(), .strip(), float(), arithmetic, and f-strings. For full Python projects, use VS Code.</p><p id="storage-warning" hidden>Browser storage is unavailable. You can still practice, but drafts and progress may not survive a refresh.</p></footer>
+    </main>
+  </div>
+  <dialog id="glossary-dialog" aria-labelledby="glossary-title"><div class="dialog-heading"><div><span class="eyebrow">LOOK IT UP, ANYTIME</span><h2 id="glossary-title">Your syntax dictionary</h2></div><button id="close-glossary" class="square-btn" aria-label="Close syntax dictionary">×</button></div><label class="search-label" for="glossary-search">Find a concept</label><input id="glossary-search" type="search" placeholder="Try strip, float, or braces…"><div id="glossary-list"></div></dialog>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
