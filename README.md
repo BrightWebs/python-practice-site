@@ -1,11 +1,13 @@
-# Python Practice
+# Brixie Corp. — Python Practice
 
-Bright's beginner Python practice website, with eight editable lessons covering print, variables, input, .strip(), float, arithmetic, f-strings, and a practice pay calculator.
+Brixie Corp.'s beginner Python practice website, with eight editable lessons covering print, variables, input, .strip(), float, arithmetic, f-strings, and a practice pay calculator.
 
 ## Open the website
 
 Visit the public practice website:
 https://brightwebs.github.io/python-practice-site/
+
+The supplied Brixie Corp. koala logo is used in the sidebar and browser icon. Its original artwork and proportions are preserved.
 
 ## Practice features
 

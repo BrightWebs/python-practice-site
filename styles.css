@@ -13,3 +13,28 @@
 @media(max-width:850px){.lesson-link strong{font-size:11px}.welcome p,.lesson-intro{font-size:13px}}
 @media(max-width:680px){.challenge-body>p{font-size:13px}.glossary-link{font-size:11px}.editor-text pre,.editor-text textarea,.line-numbers{font-size:12px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+
+/* Brixie Corp. branding: original logo, preserved proportions. */
+.sidebar{padding-top:24px}
+.brand.brixie-brand{display:flex;flex-direction:column;align-items:center;gap:9px;margin:0 auto;letter-spacing:0}
+.business-logo{display:block;width:112px;height:112px;object-fit:contain;background:#000;border-radius:14px}
+.brand-program{font:650 10px/1.4 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;letter-spacing:1.8px;color:#6e7774}
+.workspace-label{margin-top:20px;margin-bottom:23px}
+.lesson-link{padding-top:9px;padding-bottom:9px}
+.welcome h1 span{color:#626d68}
+.lesson-link.active{background:#eef1ed;color:#2c3930}
+.active .lesson-number{background:#38453d;border-color:#38453d}
+.run-btn{background:#d5ded4;color:#263a2b}
+.run-btn:hover{background:#e1e8dd}
+@media(max-width:850px){
+ .sidebar{padding-top:16px}
+ .brand.brixie-brand{flex-direction:row;justify-content:flex-start;margin:0;gap:13px}
+ .business-logo{width:64px;height:64px;border-radius:9px}
+ .brand-program{font-size:11px;letter-spacing:1.2px}
+ .sidebar-bottom{top:30px}
+}
+@media(max-width:680px){
+ .business-logo{width:58px;height:58px}
+ .brand-program{font-size:9px;max-width:90px}
+ .topbar{letter-spacing:.6px;font-size:8px}
+}
