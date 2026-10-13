@@ -38,3 +38,11 @@
  .brand-program{font-size:9px;max-width:90px}
  .topbar{letter-spacing:.6px;font-size:8px}
 }
+
+/* Subtle purple accents to complement the Brixie logo. */
+:root{--purple-accent:#8061a8}
+.topbar .dot{background:var(--purple-accent);box-shadow:0 0 0 3px #8061a812}
+.lesson-link.active{box-shadow:inset 3px 0 var(--purple-accent)}
+.active .lesson-number{background:var(--purple-accent);border-color:var(--purple-accent)}
+.guide-title .idea-icon{color:var(--purple-accent)}
+.explanation-card{border-top:2px solid #d9cce9}
